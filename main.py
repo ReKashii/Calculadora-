@@ -1,5 +1,5 @@
 # Funciones de la calculadora
-#ala funcion suma le damos 2 argumentos que seran nuestros inputs mas adelante
+# a la funcion suma le damos 2 argumentos que seran nuestros inputs mas adelante
 def suma(num1, num2):
     return num1 + num2
 
@@ -15,6 +15,13 @@ def division(num1, num2):
     else:
         return num1 / num2
     
+def exponentes(num1, num2):
+    return pow(num1, num2)
+
+# Funcion desechada de raiz cuadrada
+# def sqrt(num1):
+#     return num1 **1/2
+    
 # en caso de no encontrar una opcion valida dentro del diccionario, esta arroja un "error"
 def sys_fail():
     return"Opcion invalida"
@@ -26,7 +33,8 @@ def switch(opcion, num1, num2):
         1: suma(num1, num2),
         2: resta(num1, num2),
         3: multiplicacion(num1, num2),
-        4: division(num1, num2)
+        4: division(num1, num2),
+        5: exponentes(num1, num2),
     }
     return sw.get(opcion, sys_fail())
 
@@ -40,6 +48,7 @@ ________________Calculator__________________\n______________version 0.1.4_______
 |   2.Restar
 |   3.Multiplicar
 |   4.Dividir
+|   5.Potencias
 |
 """)
      opcion = int(input("Seleccione una opcion: "))
