@@ -43,7 +43,7 @@ def main():
     owo = 1
     while owo:
      print("""
-________________Calculator__________________\n______________version 0.1.4_________________\n|
+________________Calculator__________________\n______________version 0.1.6_________________\n|
 |   1.Sumar
 |   2.Restar
 |   3.Multiplicar
